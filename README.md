@@ -1,6 +1,6 @@
 # Healthylife-Insurance-Charge-Prediction
 
-🚀 Project Overview
+## 🚀 Project Overview
 Business Context
 Healthylife is a leading insurance provider based in New York City offering health, auto, and life policies nationwide. Today, charges are set via traditional rate tables based on age, sex, BMI, etc., but these lack precision—leading to under‐ or over‐pricing that can hurt both profits and customer satisfaction.
 
@@ -17,7 +17,7 @@ Build and deploy a predictive model (and accompanying web API/app) that:
 
 ---
 
-📂 Repository Structure
+## 📂 Repository Structure
 ```pgsql
 README.md
 requirements.txt               ← Python dependencies
@@ -34,7 +34,7 @@ data/
 
 ---
 
-🛠️ Setup & Dependencies
+## 🛠️ Setup & Dependencies
 1. Python: tested on 3.8+
 2. Install requirements:
 ```bash
@@ -45,7 +45,7 @@ pip install -r requirements.txt
 
 ---
 
-📥 Data Import & Preprocessing
+## 📥 Data Import & Preprocessing
 In your notebook or script:
 ```python
 import pandas as pd
@@ -65,7 +65,7 @@ Preprocessing pipeline (scikit‐learn `ColumnTransformer`):
 
 ---
 
-🔍 Exploratory Data Analysis (EDA)
+## 🔍 Exploratory Data Analysis (EDA)
 Key insights:
 - Age and BMI show strong positive correlation with charges.
 - Smokers incur on average ~10× higher charges than non‐smokers.
@@ -74,7 +74,7 @@ Key insights:
 
 ---
 
-📊 Modeling
+## 📊 Modeling
 Model choice:
 - Simple Linear Regression with all preprocessing in a single `Pipeline` 
 - (You can swap in more advanced regressors - e.g. RandomForestRegressor, XGBoost, etc.)
@@ -93,7 +93,7 @@ Evaluation metrics:
 
 ---
 
-🚧 Usage
+## 🚧 Usage
 Load the trained model and predict on new data:
 ```python
 from src.predict import load_model, predict_charges
@@ -118,7 +118,7 @@ python src/predict.py \
 
 ---
 
-🤝 Contributing
+## 🤝 Contributing
 - Issues & feature requests are welcome.
 - For code contributions, please fork, create a feature branch, and submit a pull request.
 
